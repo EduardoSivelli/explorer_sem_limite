@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; 
+}
+
+body {
+  background: #F9F4FB;
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+}
+.hero{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap:3.5rem;
+  margin-bottom: 9.3rem;
+  padding-left: 10%;
+  width: 100%
+ 
+}
+
+.left-hero{
+  display:flex;
+  flex-direction: column;
+  gap:17.9rem;
+  
+}
+
+.astronauta {
+  
+  max-height: 73.23rem;
+  max-width: 65%;
+}
+h1{
+  color: #B52184;
+
+  font-size: 5rem;
+  font-weight: 900;
+}
+h2 {
+  color: #312D64;
+  font-size: 2.9rem;
+  font-weight: 600
+}
+
+.button{
+  width: 4.85rem;
+  height: 7.5rem;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.main{
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6.4rem 0;
+  align-items: center;
+  gap: 4.96rem;
+  width: 100%;
+}
+.cards{
+  background: #ECE9FD;
+  padding: 2.65rem;
+  border-radius: 1.98rem;
+  max-width: 30.2rem;
+  min-height: 37.1rem;
+  
+}
+h3 {
+  color: #B52184;
+  font-size: 2.92rem;
+  font-weight: 900;
+}
+p{
+  color: #312D64;
+  font-size: 1.60rem;
+  font-weight: 600;
+
+}
+.contact{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 9.3rem;
+
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10%;
+  gap: 2.4rem;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+h4{
+  color: #B52184;
+  font-size: 4.2rem;
+  font-weight: 900;
+}
+
+label{
+  width:1px;
+  height:1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+input {
+  width: 100%;
+  padding: .8rem;
+
+  background-color: #F9F4FB;
+  border: 1.5px solid #312D64;
+  border-radius: 1rem;
+
+  color: #343193;
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+
+}
+input::placeholder, textarea::placeholder {
+  color: #343193;
+}
+
+#name {
+  background-image: url("./assets/person.png");
+  background-repeat: no-repeat;
+  background-position: left 1rem top 50%;
+  background-size: 2rem;
+  padding-left: 3.8rem;
+  
+
+}
+
+#email{
+  background-image: url("./assets/at.png");
+  background-repeat: no-repeat;
+  background-position: left 1rem top 50%;
+  background-size: 2rem;
+  padding-left: 3.8rem;
+}
+textarea{
+  width: 100%;
+  padding: .8rem;
+
+  background-color: #F9F4FB;
+  border: 1.5px solid #312D64;
+  border-radius: 1rem;
+
+  color: #343193;
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+}
+
+button{
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 40%;
+
+  font-size: 1.4rem;
+  font-family: 'Mulish', sans-serif;
+  color: #F9F4FB;
+
+}
+
+button:hover{
+  background: #312D49;
+  cursor: pointer;
+}
+
+footer{
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  width: 100%;
+  padding: 1.6rem;
+  text-align: center;
+  color: #FFF;
+}
+
+@media (max-width: 1059px) {
+  
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 1.7rem;
+  }
+  
+  .cards, 
+  .contact {
+    width: 82%;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 1.3rem;
+  }
+  .left-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 7.9rem;
+  }
+  .pink-star{
+    width:1px;
+    height:1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .contact {
+    margin-bottom: 2rem;
+  }
+  button{
+    width: 15.1rem; 
+  }
+}
